@@ -10,7 +10,7 @@ const Index = () => {
       <Text fontSize="xl" mb={6} textAlign="center">
         Revolutionizing mental health support with AI.
       </Text>
-      <Button colorScheme="blue" size="lg">
+      <Button colorScheme="blue" size="lg" _hover={{ transform: "scale(1.05)" }}>
         Start Your Session
       </Button>
     </Container>
@@ -25,7 +25,7 @@ const AIModelCard = ({ name, description, icon }) => {
         {name}
       </Heading>
       <Text mb={4}>{description}</Text>
-      <Button leftIcon={icon} colorScheme="blue" variant="outline">
+      <Button leftIcon={icon} colorScheme="blue" variant="outline" _hover={{ transform: "scale(1.05)" }}>
         Start Session
       </Button>
     </Box>
