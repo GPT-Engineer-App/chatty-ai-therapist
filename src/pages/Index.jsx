@@ -3,18 +3,16 @@ import { FaRobot } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" py={10}>
-      <Heading as="h1" mb={4} textAlign="center">
-        Welcome to AI Therapy
+    <Container maxW="container.xl" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+      <Heading as="h1" mb={4} textAlign="center" size="4xl">
+        AI Therapy
       </Heading>
-      <Text fontSize="lg" mb={6} textAlign="center">
-        Personalized mental health support at your fingertips.
+      <Text fontSize="xl" mb={6} textAlign="center">
+        Revolutionizing mental health support with AI.
       </Text>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        <AIModelCard name="MindEase" description="Specializes in cognitive behavioral therapy techniques." icon={<FaRobot />} />
-        <AIModelCard name="SerenityAI" description="Focuses on mindfulness and stress reduction." icon={<FaRobot />} />
-        <AIModelCard name="EmpathyBot" description="Expert in empathetic listening and support." icon={<FaRobot />} />
-      </SimpleGrid>
+      <Button colorScheme="blue" size="lg">
+        Start Your Session
+      </Button>
     </Container>
   );
 };
